@@ -1,6 +1,10 @@
 # Trace Desk AML Workspace
 
-**[Open the AML workspace](https://brandon-usdt-workspace.brandon-d-candela.chatgpt.site/)**
+![Trace Desk AML Workspace](docs/social-preview.jpg)
+
+**[▶ Open the live demo](https://brandoncandela.github.io/trace-desk-aml-workspace/)** · [Portfolio](https://brandoncandela.github.io/) · [LinkedIn](https://www.linkedin.com/in/brandon-candela/) · Built by Brandon Candela, CAMS
+
+> **What this shows:** Live Ethereum USDT tracing with strict scope limits, evidence pinning, alternative explanations and a portable case file for QC.
 
 Standalone project for bounded USDT tracing, analyst case files and QC review.
 
