@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T15:18:21Z",
+  "title": "Design System: Trace Desk AML Workspace",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Evidence Ink",
+        "canonical": "#13212b",
+        "tonalRamp": ["#172935", "#274458", "#375f7c", "#467a9f", "#6094b9", "#83acc8", "#b8cfe0", "#edf3f7"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Review Gray",
+        "canonical": "#5b6b77",
+        "tonalRamp": ["#21272b", "#374148", "#4d5b65", "#637582", "#7d8e9c", "#9aa7b2", "#c5cdd3", "#f1f2f4"]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Slate Wash",
+        "canonical": "#eef2f4",
+        "tonalRamp": ["#1e292e", "#32444d", "#46606c", "#5a7b8b", "#7494a5", "#93acb9", "#c1d0d7", "#f0f3f5"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Case Rule",
+        "canonical": "#d6dee3",
+        "tonalRamp": ["#1f282d", "#34434c", "#485d6a", "#5d7888", "#7791a2", "#95aab7", "#c2ced6", "#f0f3f5"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Work Paper",
+        "canonical": "#f7f9fa",
+        "tonalRamp": ["#1d292f", "#31454e", "#45606e", "#587c8d", "#7295a7", "#91adba", "#c0d0d8", "#eff3f5"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Document White",
+        "canonical": "#fff",
+        "tonalRamp": ["#262626", "#404040", "#595959", "#737373", "#8c8c8c", "#a6a6a6", "#cccccc", "#f2f2f2"]
+      },
+      "navy": {
+        "role": "secondary",
+        "displayName": "Institutional Navy",
+        "canonical": "#0d1d28",
+        "tonalRamp": ["#132a3a", "#1f4660", "#2c6287", "#387ead", "#5297c7", "#78aed3", "#b2d1e6", "#ecf3f9"]
+      },
+      "navy-2": {
+        "role": "secondary",
+        "displayName": "Raised Navy",
+        "canonical": "#142c3a",
+        "tonalRamp": ["#142b39", "#21485f", "#2e6585", "#3b81ab", "#549bc4", "#7ab1d1", "#b3d3e5", "#ecf4f8"]
+      },
+      "teal": {
+        "role": "primary",
+        "displayName": "Investigation Teal",
+        "canonical": "#087c75",
+        "tonalRamp": ["#054844", "#087871", "#0ba89e", "#0ed8cb", "#27f1e5", "#57f4eb", "#9ff9f3", "#e7fdfc"]
+      },
+      "teal-dark": {
+        "role": "primary",
+        "displayName": "Deep Investigation Teal",
+        "canonical": "#075e59",
+        "tonalRamp": ["#054743", "#097770", "#0ca69d", "#10d6ca", "#29efe4", "#59f3ea", "#a0f8f3", "#e7fdfc"]
+      },
+      "teal-soft": {
+        "role": "primary",
+        "displayName": "Evidence Wash",
+        "canonical": "#dff2ef",
+        "tonalRamp": ["#163631", "#255b52", "#347f73", "#42a394", "#5cbdad", "#80cbc0", "#b6e2db", "#edf8f6"]
+      },
+      "amber": {
+        "role": "tertiary",
+        "displayName": "Limitation Amber",
+        "canonical": "#a45c08",
+        "tonalRamp": ["#492904", "#7a4406", "#aa5f08", "#db7b0b", "#f49424", "#f7ac55", "#fad09e", "#fef3e7"]
+      },
+      "amber-soft": {
+        "role": "tertiary",
+        "displayName": "Limitation Paper",
+        "canonical": "#fff3dd",
+        "tonalRamp": ["#4c3100", "#805200", "#b27300", "#e69400", "#ffae1a", "#ffc04d", "#ffdb99", "#fff6e5"]
+      },
+      "red": {
+        "role": "tertiary",
+        "displayName": "Action Error",
+        "canonical": "#9a2f2f",
+        "tonalRamp": ["#3b1212", "#621e1e", "#892a2a", "#b03636", "#c94f4f", "#d57676", "#e7b1b1", "#f9ebeb"]
+      }
+    },
+    "typographyMeta": {
+      "display": {"displayName": "Case Proposition", "purpose": "The single page-level proposition."},
+      "headline": {"displayName": "Workspace Headline", "purpose": "Major investigation-stage headings."},
+      "title": {"displayName": "Workbench Title", "purpose": "Compact panel and workbench headings."},
+      "body": {"displayName": "Operational Body", "purpose": "Instructions, findings, field labels, and review copy."},
+      "body-large": {"displayName": "Purpose Lede", "purpose": "The concise first-view explanation."},
+      "label": {"displayName": "State Label", "purpose": "Source state, table headings, and terse operational metadata."},
+      "mono": {"displayName": "Literal Evidence", "purpose": "Addresses, hashes, block ranges, token units, and raw evidence."}
+    },
+    "shadows": [
+      {"name": "case-context", "value": "0 10px 20px rgba(13,29,40,.06)", "purpose": "Keeps the sticky case bar legible above scrolling evidence."}
+    ],
+    "motion": [
+      {"name": "state-fast", "value": "150ms ease", "purpose": "Button, field, and focus-state color transitions."},
+      {"name": "evidence-fast", "value": "160ms ease", "purpose": "Graph edge emphasis and de-emphasis."},
+      {"name": "reduced-motion", "value": "none", "purpose": "Disables transitions and smooth scrolling when reduced motion is requested."}
+    ],
+    "breakpoints": [
+      {"name": "rail-collapse", "value": "1050px"},
+      {"name": "mobile-records", "value": "720px"}
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single primary action for the current investigation stage.",
+      "html": "<button class=\"ds-btn-primary\">Save portable case</button>",
+      "css": ".ds-btn-primary{min-height:42px;border:1px solid var(--teal-dark);border-radius:4px;padding:9px 15px;background:var(--teal-dark);color:var(--white);font:700 16px/1.5 \"Public Sans\",sans-serif;cursor:pointer;transition:background-color .15s,border-color .15s}.ds-btn-primary:hover{background:var(--teal);border-color:var(--teal)}.ds-btn-primary:focus-visible{outline:3px solid rgba(8,124,117,.28);outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Supporting case, export, and inspection actions.",
+      "html": "<button class=\"ds-btn-secondary\">Open case file</button>",
+      "css": ".ds-btn-secondary{min-height:42px;border:1px solid #6f8794;border-radius:4px;padding:9px 15px;background:#edf3f5;color:var(--ink);font:700 16px/1.5 \"Public Sans\",sans-serif;cursor:pointer;transition:background-color .15s,border-color .15s}.ds-btn-secondary:hover{background:var(--teal-soft);border-color:var(--teal)}.ds-btn-secondary:focus-visible{outline:3px solid rgba(8,124,117,.28);outline-offset:2px}"
+    },
+    {
+      "name": "Warning Button",
+      "kind": "button",
+      "refersTo": "button-warning",
+      "description": "A limitation-sensitive or return-for-correction action.",
+      "html": "<button class=\"ds-btn-warning\">Return for correction</button>",
+      "css": ".ds-btn-warning{min-height:42px;border:1px solid #c48228;border-radius:4px;padding:9px 15px;background:var(--amber-soft);color:#714006;font:700 16px/1.5 \"Public Sans\",sans-serif;cursor:pointer}.ds-btn-warning:hover{border-color:var(--amber);background:#ffe8bd}.ds-btn-warning:focus-visible{outline:3px solid rgba(164,92,8,.3);outline-offset:2px}"
+    },
+    {
+      "name": "Evidence Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "A compact, high-contrast field for case context and analyst reasoning.",
+      "html": "<label class=\"ds-field\">Case title / reference<input value=\"Public-case review 001\"></label>",
+      "css": ".ds-field{display:block;color:#293b46;font:700 13px/1.5 \"Public Sans\",sans-serif}.ds-field input{display:block;width:100%;min-height:44px;margin-top:7px;border:1px solid #aebbc3;border-radius:3px;background:var(--white);color:var(--ink);padding:11px 12px;font:400 16px/1.5 \"Public Sans\",sans-serif}.ds-field input:focus{outline:3px solid rgba(8,124,117,.28);outline-offset:2px;border-color:var(--teal)}"
+    },
+    {
+      "name": "Workflow Navigation",
+      "kind": "nav",
+      "description": "The four-stage investigation rail for Collect, Explore, Assess, and QC review.",
+      "html": "<nav class=\"ds-workflow\"><a href=\"#\"><span>01</span>Collect</a><a href=\"#\"><span>02</span>Explore</a><a href=\"#\"><span>03</span>Assess</a><a href=\"#\"><span>04</span>QC review</a></nav>",
+      "css": ".ds-workflow{display:grid;grid-template-columns:repeat(4,1fr);background:var(--navy);border:1px solid #28414f;overflow:auto}.ds-workflow a{display:flex;align-items:center;gap:10px;min-width:118px;padding:14px 18px;border-right:1px solid #28414f;color:#cbd8dd;text-decoration:none;font:700 14px/1.5 \"Public Sans\",sans-serif}.ds-workflow a:last-child{border-right:0}.ds-workflow a:hover{background:var(--navy-2);color:var(--white)}.ds-workflow a:focus-visible{outline:3px solid rgba(127,212,203,.45);outline-offset:-3px}.ds-workflow span{color:#7fd4cb;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Source Label",
+      "kind": "chip",
+      "refersTo": "source-label",
+      "description": "Compact text-only metadata for case source and demonstration role.",
+      "html": "<span class=\"ds-source-label\">Imported case · not reverified</span>",
+      "css": ".ds-source-label{color:var(--teal-dark);font:800 12px/1.5 \"Public Sans\",sans-serif;letter-spacing:.04em;text-transform:uppercase}"
+    },
+    {
+      "name": "Workspace Section",
+      "kind": "card",
+      "refersTo": "workspace-section",
+      "description": "A flat white investigation work area separated by a quiet structural rule.",
+      "html": "<section class=\"ds-workspace-section\"><h2>Transfer evidence</h2><p>Inspect exact transaction records and pin supporting evidence.</p></section>",
+      "css": ".ds-workspace-section{border:1px solid var(--line);border-radius:0;background:var(--white);color:var(--ink);padding:clamp(22px,3vw,38px);font:400 16px/1.5 \"Public Sans\",sans-serif}.ds-workspace-section h2{margin:0 0 10px;font-size:clamp(24px,2.2vw,34px);line-height:1.12;letter-spacing:-.02em}.ds-workspace-section p{margin:0;color:var(--muted)}"
+    },
+    {
+      "name": "Prototype Limitation",
+      "kind": "custom",
+      "description": "An amber disclosure placed beside the action whose control limitation it qualifies.",
+      "html": "<aside class=\"ds-limit\"><strong>Prototype control limitation</strong><p>Reviewer identity and separation of duties are not enforced.</p></aside>",
+      "css": ".ds-limit{display:grid;grid-template-columns:190px 1fr;gap:18px;border:1px solid #e1bd87;background:var(--amber-soft);color:#5b3b13;padding:14px 16px;font:400 13px/1.5 \"Public Sans\",sans-serif}.ds-limit strong{font-weight:800}.ds-limit p{margin:0}@media(max-width:720px){.ds-limit{grid-template-columns:1fr;gap:6px}}"
+    },
+    {
+      "name": "Selected Evidence Detail",
+      "kind": "custom",
+      "description": "A dark, sticky evidence surface for the transaction currently under inspection.",
+      "html": "<aside class=\"ds-evidence-detail\"><p class=\"ds-mono\">Transaction: 0x71ab…42f0</p><p>353.912839 USDT</p><a href=\"#\">Independent explorer lookup</a></aside>",
+      "css": ".ds-evidence-detail{min-height:180px;padding:20px;background:var(--navy);color:#dbe6ea;font:400 13px/1.5 \"Public Sans\",sans-serif}.ds-evidence-detail p{margin:0 0 10px}.ds-evidence-detail a{display:block;margin:16px 0;color:#98ddd5;text-underline-offset:3px}.ds-mono{font-family:ui-monospace,\"SFMono-Regular\",Consolas,monospace;overflow-wrap:anywhere}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Disciplined Investigation File",
+    "overview": "Trace Desk is an evidence-led enterprise workspace, not a promotional crypto dashboard. A graphite and navy application shell holds a light slate work surface where scope, evidence, interpretation, and limitations remain visibly distinct. The visual system is compact, sober, and operational. Square-edged work areas, quiet rules, tabular numerals, and one teal interaction color let the case itself carry the interface.",
+    "keyCharacteristics": [
+      "Dark institutional shell over a light, high-legibility case surface",
+      "One teal interaction voice and one amber limitation voice",
+      "Compact square components with explicit state, scope, and provenance",
+      "Evidence-first layouts that pair actions with the information they affect",
+      "Honest prototype language that never implies production controls"
+    ],
+    "rules": [
+      {"name": "The Semantic Accent Rule", "body": "Teal means interaction or confirmed state. Amber means limitation or attention. Red means an actionable error.", "section": "colors"},
+      {"name": "The Evidence Type Rule", "body": "Monospace signals literal evidence, never generic technical sophistication.", "section": "typography"},
+      {"name": "The Flat-by-Default Rule", "body": "A surface earns elevation only when it must remain contextually above scrolling evidence.", "section": "elevation"}
+    ],
+    "dos": [
+      "Keep scope, evidence, interpretation, and limitations visually distinct.",
+      "Keep current case source, subject, QC state, and portable-file state visible.",
+      "Pair every evidence filter with a readable status and clear action.",
+      "Preserve keyboard focus, reduced motion, text alternatives, table captions, and mobile evidence labels.",
+      "State file-based persistence and prototype control limits at the action they affect."
+    ],
+    "donts": [
+      "Do not add gradients, glows, dotted technical textures, glass effects, or decorative status pills.",
+      "Do not imply autosave, authenticated reviewers, enforced separation of duties, wallet attribution, or automated compliance decisions.",
+      "Do not use color as the only graph or status cue.",
+      "Do not use rounded cards as the default page structure or nest cards inside cards.",
+      "Do not use monospace for ordinary headings, labels, or body copy.",
+      "Do not hide technical limits inside a footer or separate documentation page."
+    ]
+  }
+}

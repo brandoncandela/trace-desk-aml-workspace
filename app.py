@@ -10,6 +10,10 @@ class Handler(BaseHTTPRequestHandler):
             body=json.dumps(load_case()).encode(); mime='application/json'
         elif route in ('/core.mjs','/live.mjs','/ui.mjs','/aml.mjs','/casefile.mjs', '/qc.mjs'):
             body=(ROOT/'static'/route[1:]).read_bytes(); mime='text/javascript; charset=utf-8'
+        elif route == '/styles.css':
+            body=(ROOT/'static/styles.css').read_bytes(); mime='text/css; charset=utf-8'
+        elif route == '/public-sans.ttf':
+            body=(ROOT/'static/public-sans.ttf').read_bytes(); mime='font/ttf'
         elif route in ('/','/index.html'):
             body=(ROOT/'static/index.html').read_bytes(); mime='text/html; charset=utf-8'
         else:
