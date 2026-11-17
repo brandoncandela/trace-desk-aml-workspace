@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" role="img" aria-label="Ethereum address neighborhood with a traced path">
+<defs>
+  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef4ff"/></linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5aa9ff"/><stop offset="1" stop-color="#0066cc"/></linearGradient>
+  <linearGradient id="indigo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b93ff"/><stop offset="1" stop-color="#4338ca"/></linearGradient>
+  <radialGradient id="glowA" cx=".2" cy=".15" r=".6"><stop offset="0" stop-color="#5aa9ff" stop-opacity=".45"/><stop offset="1" stop-color="#5aa9ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glowB" cx=".9" cy=".9" r=".6"><stop offset="0" stop-color="#8b93ff" stop-opacity=".4"/><stop offset="1" stop-color="#8b93ff" stop-opacity="0"/></radialGradient>
+  <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1e3a8a" flood-opacity=".10"/></filter>
+</defs>
+<style>
+  .pulse { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .flow { stroke-dasharray: 6 10; animation: flow 1.6s linear infinite; }
+  @keyframes pulse { 50% { transform: scale(1.18); opacity: .75; } }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes grow { from { transform: scaleY(0); } }
+  @keyframes fade { from { opacity: 0; } }
+  @keyframes flow { to { stroke-dashoffset: -32; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; stroke-dashoffset: 0 !important; } }
+</style>
+<rect width="560" height="440" rx="28" fill="url(#panel)"/>
+<rect width="560" height="440" rx="28" fill="url(#glowA)"/>
+<rect width="560" height="440" rx="28" fill="url(#glowB)"/>
+<rect x=".5" y=".5" width="559" height="439" rx="27.5" fill="none" stroke="#ffffff" stroke-opacity=".9"/>
+<line x1="250" y1="240" x2="399.0" y2="237.8" stroke="#5aa9ff" stroke-opacity=".55" stroke-width="2" class=""/>
+<line x1="250" y1="240" x2="361.2" y2="312.1" stroke="#5aa9ff" stroke-opacity=".55" stroke-width="2" class=""/>
+<line x1="250" y1="240" x2="324.8" y2="341.8" stroke="#5aa9ff" stroke-opacity=".55" stroke-width="2" class=""/>
+<line x1="250" y1="240" x2="268.5" y2="353.6" stroke="#5aa9ff" stroke-opacity=".55" stroke-width="2" class=""/>
+<line x1="250" y1="240" x2="162.8" y2="344.8" stroke="#5aa9ff" stroke-opacity=".55" stroke-width="2" class=""/>
+<line x1="250" y1="240" x2="144.1" y2="307.6" stroke="#5aa9ff" stroke-opacity=".55" stroke-width="2" class=""/>
+<line x1="250" y1="240" x2="91.2" y2="260.5" stroke="#5aa9ff" stroke-opacity=".55" stroke-width="2" class=""/>
+<line x1="250" y1="240" x2="147.4" y2="185.1" stroke="#c4302b" stroke-opacity=".55" stroke-width="2" class="flow"/>
+<line x1="250" y1="240" x2="195.3" y2="115.8" stroke="#5aa9ff" stroke-opacity=".55" stroke-width="2" class=""/>
+<line x1="250" y1="240" x2="259.3" y2="121.9" stroke="#5aa9ff" stroke-opacity=".55" stroke-width="2" class=""/>
+<line x1="250" y1="240" x2="296.4" y2="151.1" stroke="#5aa9ff" stroke-opacity=".55" stroke-width="2" class="flow"/>
+<line x1="250" y1="240" x2="359.2" y2="192.1" stroke="#5aa9ff" stroke-opacity=".55" stroke-width="2" class=""/>
+<line x1="399.0" y1="237.8" x2="324.8" y2="341.8" stroke="#8b93ff" stroke-opacity=".35" stroke-width="1.5"/>
+<line x1="162.8" y1="344.8" x2="91.2" y2="260.5" stroke="#8b93ff" stroke-opacity=".35" stroke-width="1.5"/>
+<line x1="195.3" y1="115.8" x2="296.4" y2="151.1" stroke="#8b93ff" stroke-opacity=".35" stroke-width="1.5"/>
+<circle cx="399.0" cy="237.8" r="7" fill="#2563eb" stroke="#fff" stroke-width="3" class="fade" style="animation-delay:0ms"/>
+<circle cx="361.2" cy="312.1" r="9" fill="#0066cc" stroke="#fff" stroke-width="3" class="fade" style="animation-delay:80ms"/>
+<circle cx="324.8" cy="341.8" r="8" fill="#4f63e6" stroke="#fff" stroke-width="3" class="fade" style="animation-delay:160ms"/>
+<circle cx="268.5" cy="353.6" r="8" fill="#5aa9ff" stroke="#fff" stroke-width="3" class="fade" style="animation-delay:240ms"/>
+<circle cx="162.8" cy="344.8" r="7" fill="#5aa9ff" stroke="#fff" stroke-width="3" class="fade" style="animation-delay:320ms"/>
+<circle cx="144.1" cy="307.6" r="7" fill="#8b93ff" stroke="#fff" stroke-width="3" class="fade" style="animation-delay:400ms"/>
+<circle cx="91.2" cy="260.5" r="8" fill="#38a6f4" stroke="#fff" stroke-width="3" class="fade" style="animation-delay:480ms"/>
+<circle cx="147.4" cy="185.1" r="20" fill="#c4302b" fill-opacity=".14" class="pulse"/>
+<circle cx="147.4" cy="185.1" r="10" fill="#c4302b" stroke="#fff" stroke-width="3"/>
+<circle cx="195.3" cy="115.8" r="7" fill="#8b93ff" stroke="#fff" stroke-width="3" class="fade" style="animation-delay:640ms"/>
+<circle cx="259.3" cy="121.9" r="7" fill="#38a6f4" stroke="#fff" stroke-width="3" class="fade" style="animation-delay:720ms"/>
+<circle cx="296.4" cy="151.1" r="9" fill="#4f63e6" stroke="#fff" stroke-width="3" class="fade" style="animation-delay:800ms"/>
+<circle cx="359.2" cy="192.1" r="8" fill="#5aa9ff" stroke="#fff" stroke-width="3" class="fade" style="animation-delay:880ms"/>
+<circle cx="250" cy="240" r="34" fill="#0066cc" fill-opacity=".12" class="pulse"/>
+<circle cx="250" cy="240" r="20" fill="url(#blue)" stroke="#fff" stroke-width="4"/>
+<text x="250" y="244" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="10" font-weight="800" fill="#fff" text-anchor="middle">SEED</text><path d="M250,240 Q229,173 147,185" fill="none" stroke="#4338ca" stroke-width="4" stroke-linecap="round" class="draw"/><rect x="372" y="30" width="160" height="112" rx="16" fill="#fff" fill-opacity=".86" stroke="#1d1d1f" stroke-opacity=".06" filter="url(#soft)" /><text x="390" y="58" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#1d1d1f" text-anchor="start">Case scope</text><text x="390" y="84" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#0066cc" text-anchor="start">15 addresses</text><text x="390" y="104" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#0066cc" text-anchor="start">15 transfers</text><text x="390" y="124" font-family="Inter, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#0066cc" text-anchor="start">2 hops max</text>
+</svg>
