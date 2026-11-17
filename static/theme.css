@@ -64,10 +64,13 @@ td button, .sequence-list button { border-radius: 10px; border-color: rgb(29 78 
 .eyebrow, .section-kicker, .privacy-note, .source-label, .role-label { color: var(--teal); }
 
 @media (max-width: 1050px) {
-  .hero { grid-template-columns: minmax(0, 1fr); }
+  .hero, .explore-grid, .assessment-layout, .evidence-layout, .analysis-grid { grid-template-columns: minmax(0, 1fr); }
   .workflow-nav { border-radius: 14px; }
 }
 @media (max-width: 720px) {
   .workflow-nav { top: 60px; margin-inline: 0; }
   .casebar { top: 112px; margin-inline: 0; }
 }
+
+/* Long addresses and hashes wrap instead of widening the page on phones */
+.scope-panel p, #findings p { overflow-wrap: anywhere; }
