@@ -1,0 +1,76 @@
+/* White and blue portfolio look for this workspace, with a cobalt accent. Loaded after styles.css and apple.css. */
+:root {
+  --ink: #1d1d1f; --muted: #55555d; --soft: #f2f6fd; --line: rgb(29 29 31 / .09); --paper: #fbfcff; --white: #fff;
+  --navy: #1d1d1f; --navy-2: #2c2c30; --teal: #1d4ed8; --teal-dark: #1e40af; --teal-soft: #eaf0ff;
+  --amber: #b26a00; --amber-soft: #fff5e3; --red: #c4302b;
+  --glass: rgb(255 255 255 / .74);
+  --shadow: 0 1px 0 rgb(255 255 255 / .8) inset, 0 12px 32px rgb(30 58 138 / .07);
+  font-family: "Inter", system-ui, sans-serif;
+}
+body { background: var(--paper); }
+
+.topbar { background: rgb(251 252 255 / .72); color: var(--muted); border-bottom: 1px solid var(--line); backdrop-filter: blur(18px) saturate(150%); -webkit-backdrop-filter: blur(18px) saturate(150%); position: sticky; top: 0; z-index: 30; }
+.brand { color: var(--ink); }
+.brand-mark { border: 0; border-radius: 10px; background: linear-gradient(135deg, #5aa9ff, #1d4ed8); color: #fff; }
+.topbar-meta { color: var(--muted); }
+.topbar-meta a { color: var(--teal); }
+
+.hero { grid-template-columns: minmax(0, 1.1fr) minmax(360px, .9fr); }
+.hero h1 { font-weight: 800; }
+.hero-lede { color: var(--muted); }
+.hero-side { display: grid; gap: 16px; min-width: 0; }
+
+.case-start, .workspace-section, .metrics, .reviewer-workbench, .expectation-field {
+  background: var(--glass); border: 1px solid rgb(255 255 255 / .7); border-radius: 18px;
+  box-shadow: var(--shadow); backdrop-filter: blur(18px) saturate(150%); -webkit-backdrop-filter: blur(18px) saturate(150%);
+}
+.metrics { overflow: hidden; }
+.card { border-right-color: var(--line); }
+.card strong { letter-spacing: -.03em; color: var(--teal); }
+
+.button { border-radius: 999px; border: 0; background: rgb(29 29 31 / .06); font-weight: 600; transition: background .2s, transform .15s; }
+.button:hover:not(:disabled) { background: rgb(29 29 31 / .1); border-color: transparent; }
+.button.primary { background: #1d1d1f; color: #fff; }
+.button.primary:hover:not(:disabled) { background: #000; transform: translateY(-1px); }
+.button.secondary { background: rgb(29 29 31 / .06); }
+.button.warning { border: 0; }
+input, select, textarea { border: 1px solid rgb(29 29 31 / .14); border-radius: 10px; }
+input:focus, select:focus, textarea:focus, button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 3px solid rgb(29 78 216 / .25); border-color: var(--teal); }
+
+/* Sticky step nav and case bar */
+.workflow-nav { background: rgb(251 252 255 / .8); border: 1px solid var(--line); border-radius: 999px; overflow: hidden; backdrop-filter: blur(18px) saturate(150%); -webkit-backdrop-filter: blur(18px) saturate(150%); top: 66px; }
+.workflow-nav a { color: var(--muted); border-right-color: var(--line); justify-content: center; }
+.workflow-nav a:hover { background: rgb(29 78 216 / .06); color: var(--ink); }
+.workflow-nav span { color: var(--teal); }
+.casebar { background: rgb(234 240 255 / .85); border: 1px solid rgb(29 78 216 / .14); border-radius: 16px; margin-top: 8px; top: 122px; backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+.case-context dt { color: #86868b; }
+
+#graph { background: rgb(255 255 255 / .6); border-radius: 14px; }
+#graph line.active { stroke: var(--teal); }
+.node:focus .visual, .node.selected .visual { stroke: #1d1d1f; }
+.legend-subject { background: #d97706; }
+.legend-direct { background: #0284c7; }
+.legend-indirect { background: #8b93ff; border-color: #4f46e5; }
+
+th { background: rgb(251 252 255 / .95); color: #86868b; font-weight: 500; }
+tbody tr:hover { background: rgb(29 78 216 / .05); }
+td button, .sequence-list button { border-radius: 10px; border-color: rgb(29 78 216 / .2); }
+.evidence-detail { background: var(--glass); color: var(--ink); border: 1px solid rgb(255 255 255 / .7); border-radius: 16px; box-shadow: var(--shadow); }
+.evidence-detail a { color: var(--teal); }
+.limit-note, .prototype-warning { border: 0; border-radius: 12px; }
+.indicator-grid { border-radius: 16px; overflow: hidden; background: rgb(255 255 255 / .6); }
+.submission-summary div { border-radius: 12px; }
+.technical-json pre { background: #f5f8ff; color: #1e3a8a; border-radius: 12px; }
+.eyebrow, .section-kicker, .privacy-note, .source-label, .role-label { color: var(--teal); }
+
+@media (max-width: 1050px) {
+  .hero, .explore-grid, .assessment-layout, .evidence-layout, .analysis-grid { grid-template-columns: minmax(0, 1fr); }
+  .workflow-nav { border-radius: 14px; }
+}
+@media (max-width: 720px) {
+  .workflow-nav { top: 60px; margin-inline: 0; }
+  .casebar { top: 112px; margin-inline: 0; }
+}
+
+/* Long addresses and hashes wrap instead of widening the page on phones */
+.scope-panel p, #findings p { overflow-wrap: anywhere; }
