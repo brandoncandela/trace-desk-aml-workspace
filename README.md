@@ -2,7 +2,7 @@
 
 ![Trace Desk AML Workspace](docs/social-preview.jpg)
 
-**[▶ Open the live demo](https://brandoncandela.github.io/trace-desk-aml-workspace/)** · [Portfolio](https://brandoncandela.github.io/) · [LinkedIn](https://www.linkedin.com/in/brandon-candela/) · Built by Brandon Candela, CAMS, PMP
+**[▶ Open the live demo](https://brandoncandela.github.io/trace-desk-aml-workspace/)** · [Technical case study](https://brandoncandela.github.io/case-studies/trace-desk.html) · [Portfolio](https://brandoncandela.github.io/) · [LinkedIn](https://www.linkedin.com/in/brandon-candela/) · Built by Brandon Candela, CAMS, PMP
 
 > **What this shows:** a crypto investigation from start to QC: pull real Ethereum USDT transfers, follow the money one wallet at a time, write up what you found and hand the case to a reviewer.
 

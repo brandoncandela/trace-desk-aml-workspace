@@ -4,3 +4,4 @@ __pycache__/
 .venv/
 fresh-data/
 .DS_Store
+.impeccable/
