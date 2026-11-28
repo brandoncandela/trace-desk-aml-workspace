@@ -1,5 +1,7 @@
 # Trace Desk AML Workspace
 
+[![CI](https://github.com/brandoncandela/trace-desk-aml-workspace/actions/workflows/ci.yml/badge.svg)](https://github.com/brandoncandela/trace-desk-aml-workspace/actions/workflows/ci.yml)
+
 ![Trace Desk AML Workspace](docs/social-preview.jpg)
 
 **[▶ Open the live demo](https://brandoncandela.github.io/trace-desk-aml-workspace/)** · [Technical case study](https://brandoncandela.github.io/case-studies/trace-desk.html) · [Portfolio](https://brandoncandela.github.io/) · [LinkedIn](https://www.linkedin.com/in/brandon-candela/) · Built by Brandon Candela, CAMS, PMP
